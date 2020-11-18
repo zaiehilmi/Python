@@ -72,7 +72,7 @@ def rowtransposition(plaintext, key):
 if int(pilihan) == 1:
     pt = input('Masukkan plaintext: ')
     kc = int(input('Masukkan key: '))
-    kesar = Caesar(pt, kc)
+    kesar = Caesar().encrypt(pt, kc)
     print(f'\nCiphertext: {kesar.upper()}')
 
 elif int(pilihan) == 3:
@@ -90,7 +90,7 @@ elif int(pilihan) == 4:
 elif int(pilihan) == 5:
     pt = input('Masukkan plaintext: ')
     kc = input('Masukkan key: ')
-    virgin = Vigenere(pt, kc)
+    virgin = Vigenere().encrypt(pt, kc)
     print(f'\nCiphertext: {virgin.upper()}')
 
 elif int(pilihan) == 6:
