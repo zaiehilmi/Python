@@ -77,7 +77,7 @@ if int(pilihan) == 1:
 
 elif int(pilihan) == 3:
     pt = input('Masukkan plaintext: ')
-    kc = int(input('Masukkan key: '))
+    kc = int(input('Masukkan depth: '))
     keretapi = railfence(pt, kc)
     print(f'\nCiphertext: {keretapi.upper()}')
 
