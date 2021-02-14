@@ -12,6 +12,8 @@ pilihan = input('''Sila Pilih algo mana yang anda mahu guna
 [7] Vernam Cipher
 ''')
 
+print(f'\nAnda masukkan pilihan {pilihan}\n\nPastikan plaintext tiada jarak!')
+
 
 def railfence(plaintext, key):
     rail = [['\n' for i in range(len(plaintext))]
